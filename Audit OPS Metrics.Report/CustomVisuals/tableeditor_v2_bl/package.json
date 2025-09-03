@@ -1,0 +1,29 @@
+{
+  "version": "2.10.1",
+  "author": {
+    "name": "",
+    "email": ""
+  },
+  "resources": [
+    {
+      "resourceId": "rId0",
+      "sourceType": 5,
+      "file": "resources/tableeditor_v2_bl.pbiviz.json"
+    }
+  ],
+  "visual": {
+    "guid": "tableeditor_v2_bl",
+    "name": "tableEditor",
+    "displayName": "Power ON Table Editor v2",
+    "version": "2.10.1",
+    "description": "",
+    "supportUrl": "",
+    "gitHubUrl": "",
+    "visualClassName": "Visual"
+  },
+  "metadata": {
+    "pbivizjson": {
+      "resourceId": "rId0"
+    }
+  }
+}
