@@ -1,0 +1,320 @@
+cultureInfo en-US
+
+	linguisticMetadata =
+			{
+			  "Version": "2.0.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "ops_metrics_calcdata_hist_audit.recordid": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ops_metrics_calcdata_hist_audit",
+			          "ConceptualProperty": "RecordID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Division": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "ops_metrics_calcdata_hist_audit.calctype": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ops_metrics_calcdata_hist_audit",
+			          "ConceptualProperty": "calctype"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CalcType": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "ops_metrics_calccomment_dim_audit.changer": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ops_metrics_calccomment_dim_audit",
+			          "ConceptualProperty": "Changer"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "ops_metrics_calccomment_dim_audit.changedate": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ops_metrics_calccomment_dim_audit",
+			          "ConceptualProperty": "ChangeDate"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "ops_metrics_audit_trail_vw.industry": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ops_metrics_audit_trail_vw",
+			          "ConceptualProperty": "Industry"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "BusinessType": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "ops_metrics_audit_trail_vw.table_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ops_metrics_audit_trail_vw",
+			          "ConceptualProperty": "Table_Name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "TableName": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "ops_metrics_audit_trail_vw.changer": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ops_metrics_audit_trail_vw",
+			          "ConceptualProperty": "Changer"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "ops_metrics_audit_trail_vw.changedate": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ops_metrics_audit_trail_vw",
+			          "ConceptualProperty": "ChangeDate"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "ops_metrics_calcdata_hist_audit.calcfield": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ops_metrics_calcdata_hist_audit",
+			          "ConceptualProperty": "calcfield"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CalcField": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "ops_metrics_audit_trail_vw.updated_by": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ops_metrics_audit_trail_vw",
+			          "ConceptualProperty": "Updated_By"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Updated By": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "ops_metrics_audit_trail_vw.updated_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ops_metrics_audit_trail_vw",
+			          "ConceptualProperty": "Updated_Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Updated Date": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "ops_metrics_calcdata_hist_audit.updated_by": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ops_metrics_calcdata_hist_audit",
+			          "ConceptualProperty": "Updated_By"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Updated By": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "ops_metrics_calcdata_hist_audit.updated_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ops_metrics_calcdata_hist_audit",
+			          "ConceptualProperty": "Updated_Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Updated Date": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "ops_metrics_inputdata_hist_audit.updated_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ops_metrics_inputdata_hist_audit",
+			          "ConceptualProperty": "Updated_Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Updated Date": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "ops_metrics_inputdata_hist_audit.updated_by": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ops_metrics_inputdata_hist_audit",
+			          "ConceptualProperty": "Updated_By"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Updated By": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "ops_metrics_calccomment_dim_audit.updated_by": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ops_metrics_calccomment_dim_audit",
+			          "ConceptualProperty": "Updated_By"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Updated By": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "ops_metrics_calccomment_dim_audit.updated_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ops_metrics_calccomment_dim_audit",
+			          "ConceptualProperty": "Updated_Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Updated Date": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  }
+			}
+		contentType: json
+

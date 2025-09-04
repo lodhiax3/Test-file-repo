@@ -1,0 +1,116 @@
+table ops_metrics_audit_trail_vw
+	lineageTag: d317cac1-ef75-4d48-9465-4a773a1d31e8
+
+	measure 'about date' = Format(Edate(Today(),-1),"MMMM -YYYY")
+		lineageTag: 16e91869-87f8-41c6-8984-6c90d870553b
+
+	column Table_Name
+		dataType: string
+		isNullable: false
+		sourceProviderType: varchar(21)
+		lineageTag: 842e74d5-51d4-45f9-a7de-4c316b8acb1b
+		summarizeBy: none
+		sourceColumn: Table_Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Recdate
+		dataType: dateTime
+		formatString: Long Date
+		sourceProviderType: date
+		lineageTag: 15179ad5-850f-4cf3-89f6-33fc02399379
+		summarizeBy: none
+		sourceColumn: Recdate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Industry
+		dataType: string
+		sourceProviderType: varchar(100)
+		lineageTag: 052a0451-34bb-4d84-a098-a0283e2cf04f
+		summarizeBy: none
+		sourceColumn: Industry
+
+		annotation SummarizationSetBy = Automatic
+
+	column Division
+		dataType: string
+		sourceProviderType: varchar(100)
+		lineageTag: 8e11489f-c14f-4709-9818-23dd1362cac2
+		summarizeBy: none
+		sourceColumn: Division
+
+		annotation SummarizationSetBy = Automatic
+
+	column FieldName
+		dataType: string
+		sourceProviderType: varchar(250)
+		lineageTag: 1f8a9eb9-9840-48f2-9576-b7318fa3d71f
+		summarizeBy: none
+		sourceColumn: FieldName
+
+		annotation SummarizationSetBy = Automatic
+
+	column Listfield
+		dataType: string
+		sourceProviderType: varchar(150)
+		lineageTag: 39f36fe3-9307-4d09-a44d-d16f6b24a9fc
+		summarizeBy: none
+		sourceColumn: Listfield
+
+		annotation SummarizationSetBy = Automatic
+
+	column OldValue
+		dataType: string
+		sourceProviderType: varchar(1024)
+		lineageTag: 30f8c202-e8fd-4ef7-81f6-eb6570b2b347
+		summarizeBy: none
+		sourceColumn: OldValue
+
+		annotation SummarizationSetBy = Automatic
+
+	column NewValue
+		dataType: string
+		sourceProviderType: varchar(1024)
+		lineageTag: 4ca17f96-77df-4466-a883-766697b7bb54
+		summarizeBy: none
+		sourceColumn: NewValue
+
+		annotation SummarizationSetBy = Automatic
+
+	column Updated_By
+		dataType: string
+		isNullable: false
+		sourceProviderType: varchar(150)
+		lineageTag: 0c4a9c98-728f-4b07-bbd7-9ae6d156e568
+		summarizeBy: none
+		sourceColumn: Updated_By
+
+		annotation SummarizationSetBy = Automatic
+
+	column Updated_Date
+		dataType: dateTime
+		isNullable: false
+		formatString: General Date
+		sourceProviderType: datetime
+		lineageTag: 24571c69-727e-4575-9d44-3554dff58906
+		summarizeBy: none
+		sourceColumn: Updated_Date
+
+		annotation SummarizationSetBy = Automatic
+
+	partition ops_metrics_audit_trail_vw = m
+		mode: directQuery
+		source =
+				let
+				    Source = Sql.Database(servername, databasename),
+				    ops_metrics_presentation_ops_metrics_audit_trail_vw = Source{[Schema="ops_metrics_presentation",Item="ops_metrics_audit_trail_vw"]}[Data]
+				in
+				    ops_metrics_presentation_ops_metrics_audit_trail_vw
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

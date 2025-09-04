@@ -1,0 +1,105 @@
+table ops_metrics_inputdata_hist_audit
+	lineageTag: ba5fb341-6ade-4a6b-aaa4-c11c7e8f94bd
+
+	column Division
+		dataType: string
+		sourceProviderType: varchar(100)
+		lineageTag: 948520ce-1621-43c9-986a-a4d451d6da57
+		summarizeBy: none
+		sourceColumn: Division
+
+		annotation SummarizationSetBy = Automatic
+
+	column RecDate
+		dataType: dateTime
+		formatString: Long Date
+		sourceProviderType: date
+		lineageTag: bff0858c-cf1f-49d4-992b-5be3d1aae7ba
+		summarizeBy: none
+		sourceColumn: RecDate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column InputField
+		dataType: string
+		sourceProviderType: varchar(150)
+		lineageTag: a264af50-bd42-4b30-94e7-de95d38f37ec
+		summarizeBy: none
+		sourceColumn: InputField
+
+		annotation SummarizationSetBy = Automatic
+
+	column OldValue
+		dataType: string
+		sourceProviderType: varchar(150)
+		lineageTag: dcba6181-c691-4f4d-b965-3372ad1caac1
+		summarizeBy: none
+		sourceColumn: OldValue
+
+		annotation SummarizationSetBy = Automatic
+
+	column NewValue
+		dataType: string
+		sourceProviderType: varchar(150)
+		lineageTag: e1c6a7de-2553-4ce8-bdf9-7a9f46f86607
+		summarizeBy: none
+		sourceColumn: NewValue
+
+		annotation SummarizationSetBy = Automatic
+
+	column Comment
+		dataType: string
+		sourceProviderType: varchar(250)
+		lineageTag: a1daacfd-c6e0-49e0-bcdd-7891d5cac335
+		summarizeBy: none
+		sourceColumn: Comment
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID
+		dataType: int64
+		isNullable: false
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 0298c68f-1b77-4896-8261-efc97165eef3
+		summarizeBy: count
+		sourceColumn: ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Updated_By
+		dataType: string
+		isNullable: false
+		sourceProviderType: varchar(150)
+		lineageTag: 8e8c4567-b28e-48ed-887d-47d7a73e586d
+		summarizeBy: none
+		sourceColumn: Updated_By
+
+		annotation SummarizationSetBy = Automatic
+
+	column Updated_Date
+		dataType: dateTime
+		isNullable: false
+		formatString: General Date
+		sourceProviderType: datetime
+		lineageTag: 39411b2d-8ccf-4141-9e5d-b9c2a4ceddc4
+		summarizeBy: none
+		sourceColumn: Updated_Date
+
+		annotation SummarizationSetBy = Automatic
+
+	partition ops_metrics_inputdata_hist_audit = m
+		mode: directQuery
+		source =
+				let
+				    Source = Sql.Database(servername, databasename),
+				    ops_metrics_datawarehouse_ops_metrics_inputdata_hist_audit = Source{[Schema="ops_metrics_datawarehouse",Item="ops_metrics_inputdata_hist_audit"]}[Data]
+				in
+				    ops_metrics_datawarehouse_ops_metrics_inputdata_hist_audit
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

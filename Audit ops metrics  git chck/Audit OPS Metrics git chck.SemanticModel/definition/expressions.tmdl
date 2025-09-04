@@ -1,0 +1,12 @@
+expression servername = "ashrp-rds-qa.c1uaxmi95zb1.us-east-1.rds.amazonaws.com" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 320cae7d-c80b-49bf-849c-ccc241f58c15
+
+	annotation PBI_ResultType = Text
+
+	annotation PBI_NavigationStepName = Navigation
+
+expression databasename = "ashrp_qa" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 0875cfa9-25dc-4c9f-847b-b7d8da86afe6
+
+	annotation PBI_ResultType = Text
+

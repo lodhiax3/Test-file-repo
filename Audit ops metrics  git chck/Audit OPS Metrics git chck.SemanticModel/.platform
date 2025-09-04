@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Audit OPS Metrics git chck"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "7f0743e6-b61b-45c8-a0cb-4962ec4e01da"
+  }
+}

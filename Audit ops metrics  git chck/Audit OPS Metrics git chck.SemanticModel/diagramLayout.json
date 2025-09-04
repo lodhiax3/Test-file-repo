@@ -1,0 +1,73 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 2291.6,
+            "y": 0
+          },
+          "nodeIndex": "ops_metrics_calccomment_dim_audit",
+          "nodeLineageTag": "b404b560-359e-4b6b-b1b0-50ed3f42a245",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2575.6,
+            "y": 0
+          },
+          "nodeIndex": "ops_metrics_calcdata_hist_audit",
+          "nodeLineageTag": "36b7ca5e-8129-42ba-b7a4-a7b5e04581b6",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2859.6,
+            "y": 2
+          },
+          "nodeIndex": "ops_metrics_inputdata_hist_audit",
+          "nodeLineageTag": "ba5fb341-6ade-4a6b-aaa4-c11c7e8f94bd",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3143.6,
+            "y": 0
+          },
+          "nodeIndex": "ops_metrics_audit_trail_vw",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

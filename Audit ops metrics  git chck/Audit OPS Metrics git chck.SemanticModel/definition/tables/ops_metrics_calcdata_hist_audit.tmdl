@@ -1,0 +1,114 @@
+table ops_metrics_calcdata_hist_audit
+	lineageTag: f25b7497-177d-4b7f-b02f-df3da7b434ea
+
+	column RecordID
+		dataType: string
+		sourceProviderType: varchar(100)
+		lineageTag: 9126398d-b944-4985-b395-d5e32c0581c9
+		summarizeBy: none
+		sourceColumn: RecordID
+
+		annotation SummarizationSetBy = Automatic
+
+	column RecDate
+		dataType: dateTime
+		formatString: Long Date
+		sourceProviderType: date
+		lineageTag: e48f58fc-3095-4b17-a158-170ae2305be6
+		summarizeBy: none
+		sourceColumn: RecDate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column calctype
+		dataType: string
+		sourceProviderType: varchar(150)
+		lineageTag: 86371a7b-815a-41ea-928d-94f039450cf8
+		summarizeBy: none
+		sourceColumn: calctype
+
+		annotation SummarizationSetBy = Automatic
+
+	column calcfield
+		dataType: string
+		sourceProviderType: varchar(150)
+		lineageTag: c3e45d0b-271d-4041-b87d-5831c73e040f
+		summarizeBy: none
+		sourceColumn: calcfield
+
+		annotation SummarizationSetBy = Automatic
+
+	column OldValue
+		dataType: string
+		sourceProviderType: varchar(150)
+		lineageTag: bb0ad6d8-f476-49a5-9d08-a114b54db937
+		summarizeBy: none
+		sourceColumn: OldValue
+
+		annotation SummarizationSetBy = Automatic
+
+	column NewValue
+		dataType: string
+		sourceProviderType: varchar(150)
+		lineageTag: 2f6250af-653f-48b3-bbf6-a61e7dfb93af
+		summarizeBy: none
+		sourceColumn: NewValue
+
+		annotation SummarizationSetBy = Automatic
+
+	column Comment
+		dataType: string
+		sourceProviderType: varchar(250)
+		lineageTag: bccfdfd4-9f21-48ed-a488-ef3ff5817c3e
+		summarizeBy: none
+		sourceColumn: Comment
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID
+		dataType: int64
+		isNullable: false
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 7b849389-2e61-4ff2-9de1-5a23346018b5
+		summarizeBy: count
+		sourceColumn: ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Updated_By
+		dataType: string
+		isNullable: false
+		sourceProviderType: varchar(150)
+		lineageTag: ead466c0-bc94-4fc7-8197-e6f27b4ae9ec
+		summarizeBy: none
+		sourceColumn: Updated_By
+
+		annotation SummarizationSetBy = Automatic
+
+	column Updated_Date
+		dataType: dateTime
+		isNullable: false
+		formatString: General Date
+		sourceProviderType: datetime
+		lineageTag: 28ab1d3a-1a12-48d1-b350-cfa6e8655499
+		summarizeBy: none
+		sourceColumn: Updated_Date
+
+		annotation SummarizationSetBy = Automatic
+
+	partition ops_metrics_calcdata_hist_audit = m
+		mode: directQuery
+		source =
+				let
+				    Source = Sql.Database(servername, databasename),
+				    ops_metrics_datawarehouse_ops_metrics_calcdata_hist_audit = Source{[Schema="ops_metrics_datawarehouse",Item="ops_metrics_calcdata_hist_audit"]}[Data]
+				in
+				    ops_metrics_datawarehouse_ops_metrics_calcdata_hist_audit
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
